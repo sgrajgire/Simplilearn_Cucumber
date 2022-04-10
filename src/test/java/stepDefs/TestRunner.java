@@ -19,7 +19,7 @@ import io.cucumber.junit.CucumberOptions;
  * tags = {"@tag1","@tag2,@tag3"} becomes tags = {"@tag1 and (@tag2 or @tag3)"}
  */
 @CucumberOptions(
-		plugin = {"html:target/html-cucmber", "json:target:cucumber.json"},
+		plugin = {"html:target/html-cucmber", "json:target/cucumber.json"},
 		features = "src/test/java/features",
 		tags = {"@Feature_Login"},
 		// tags = {"@Sanity"}, // runs single tag
